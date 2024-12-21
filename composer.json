@@ -1,0 +1,8 @@
+{
+    "name": "aralinksace/dental-booking",
+    "description": "A dental booking system",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}

@@ -1,0 +1,207 @@
+/* Custom navbar background color */
+.navbar-custom {
+    background-color: #143264;
+}
+
+/* Text color for navbar links */
+.navbar-custom .nav-link, .navbar-custom .navbar-brand {
+    color: #ffffff;
+}
+
+/* Dropdown menu background and text color */
+.navbar-custom .dropdown-menu {
+    background-color: #143264;
+}
+
+.navbar-custom .dropdown-menu .dropdown-item {
+    color: #ffffff;
+}
+
+.navbar-custom .dropdown-menu .dropdown-item:hover {
+    background-color: #0d2a59; /* Darker shade on hover for better visibility */
+}
+
+
+
+/* Fullscreen Background Image */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Fullscreen height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally if needed */
+    position: relative; /* Allows positioning of overlay */
+}
+
+/* Blur effect overlay */
+.blur-overlay {
+    padding: 20px; /* Add padding for better spacing */
+    background: rgba(127, 177, 237, 0.4); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 8px; /* Optional: add rounded corners */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+}
+
+/* Ensure the text content is readable */
+.col-md-8 {
+    position: relative;
+    z-index: 1; /* Ensure content is on top of blur effect */
+}
+
+/* For Responsive Mobile Styling */
+@media (max-width: 768px) {
+    .bg-image {
+        background-size: cover;
+        background-position: top; /* Adjust the background image position on smaller screens */
+    }
+
+    .row {
+        text-align: center; /* Center text alignment on smaller screens */
+    }
+
+    .col-md-8, .col-md-4 {
+        padding: 20px; /* Add padding for better spacing on smaller screens */
+    }
+}
+
+
+/* form */
+form {
+    background: rgba(127, 177, 237, 0.4); /* Light background for form */
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 8px; /* Optional: rounded corners for form */
+}
+
+.form-label {
+    font-weight: bold; /* Bold labels for better readability */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+.btn-primary {
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+.w-100 {
+    width: 100%; /* Full width for form elements */
+}
+
+/* Ensure form is responsive */
+@media (max-width: 768px) {
+    .col-md-4 {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+}/* Registration Form Box */
+.form-box {
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Input Box Styling */
+.input-box {
+    position: relative;
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; /* Space for icon */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Icon Styling */
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon ion-icon {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #143264; /* Custom button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Terms & Conditions Checkbox */
+.remember-forgot {
+    margin-bottom: 20px;
+}
+
+/* Login/Register Link */
+.login-register {
+    text-align: center;
+}
+
+.login-link {
+    color: #143264; /* Custom link color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-4 {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+}
+
+.search-button {
+    width: 40px; /* Adjust the width as needed */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #f8f9fa; /* Light background for the cards */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card h5 {
+    font-weight: bold; /* Bold headings */
+}
+
+.card p {
+    color: #6c757d; /* Grey text for descriptions */
+}
